@@ -16,11 +16,11 @@
     <tbody>
         {% for entrada in entrada %}
       <tr class="table-info">
-        <td>{{ mantenimiento.id}}</td>
-        <td>{{ mantenimiento.fecha}}</td>
-        <td>{{ mantenimiento.cantidad}}</td>
-        <td>{{ mantenimiento.valor}}</td>
-        <td>{{ mantenimiento.producto}}</td>
+        <td>{{ entrada.id}}</td>
+        <td>{{ entrada.fecha}}</td>
+        <td>{{ entrada.cantidad}}</td>
+        <td>{{ entrada.valor}}</td>
+        <td>{{ entrada.producto_id}}</td>
       </tr>
       {% endfor %}
     </tbody>
