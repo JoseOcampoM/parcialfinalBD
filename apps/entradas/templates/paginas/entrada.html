@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if entrada %}
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Producto ID</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for entrada in entrada %}
+      <tr class="table-info">
+        <td>{{ mantenimiento.id}}</td>
+        <td>{{ mantenimiento.fecha}}</td>
+        <td>{{ mantenimiento.cantidad}}</td>
+        <td>{{ mantenimiento.valor}}</td>
+        <td>{{ mantenimiento.producto}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% else %}
+
+<h1>No hay registros</h1>
+
+{% endif %}
+
+{% endblock %}
